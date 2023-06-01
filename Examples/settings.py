@@ -45,7 +45,7 @@ CKEDITOR_CONFIGS = {
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','one68-db-env.eba-qsjdjmsz.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['*']
 
 # rest_framework:
 
@@ -121,26 +121,17 @@ DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# if os.environ.get('DB_ENGINE') and os.environ.get('DB_ENGINE') == "mysql":
 DATABASES = { 
     'default': {
         'ENGINE'  : 'django.db.backends.mysql', 
         'NAME'    : os.getenv('DB_NAME'     , 'ebdb'),
         'USER'    : os.getenv('DB_USERNAME' , 'admin'),
-        'PASSWORD': os.getenv('DB_PASS'     , 'One68global!'),
-        'HOST'    : os.getenv('DB_HOST'     , 'awseb-e-2mippw4akb-stack-awsebrdsdatabase-g1ac8vvgezyx.cvvgo4wufb3g.us-west-2.rds.amazonaws.com'),
+        'PASSWORD': os.getenv('DB_PASS'     , ''),
+        'HOST'    : os.getenv('DB_HOST'     , ''),
         'PORT'    : os.getenv('DB_PORT'     , 3306),
     }
  }
-# else:
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'db.sqlite3',
-#         }
-#     }
-# Password validation
-# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -161,9 +152,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Email
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.office365.com'
-EMAIL_HOST_USER = 'ygao@one68global.com'
-EMAIL_HOST_PASSWORD = 'GL67yf981001'
+EMAIL_HOST = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_USE_SSL = False
@@ -193,9 +184,9 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 AWS_QUERYSTRING_AUTH = False
 
-AWS_ACCESS_KEY_ID = 'AKIAQI6BFNVFSCBPKS52'
+AWS_ACCESS_KEY_ID = ''
 
-AWS_SECRET_ACCESS_KEY = 'qmU6/2yilSjkw9Gcq/hj8L3Bn7R2Z4oWtVi9LTfd'
+AWS_SECRET_ACCESS_KEY = ''
 
 
 AWS_STORAGE_BUCKET_NAME = 'media-saver'
