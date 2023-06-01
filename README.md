@@ -1,6 +1,6 @@
-Django-based-database
+# Django-based-database
 ---
-This project is a direct tutorial for building a web application database using django rest framework and AWS from scratch and a simple handbook of how to maintain the usability. 
+This project is a direct tutorial for building a web application database using django rest framework and AWS from scratch and a simple handbook of how to maintain the usability on Windows. 
 
 Duration: 1-2 weeks to build and setup
 
@@ -15,3 +15,13 @@ Learn: How to build Django web application for database usage, how to build and 
 Current difficulty: Extra cost from AWS RDs, Insufficienty protection for database, Limited front-end related knowledge.  
 
 Updated on 06/01/2023
+
+## Setup
+---
+First please follow the following link to download **Django 2.2**, since AWS now can only support this version.  
+
+```Python
+pip install Django==2.2
+```
+
+[Django Official Website](https://docs.djangoproject.com/en/4.2/intro/install/)
