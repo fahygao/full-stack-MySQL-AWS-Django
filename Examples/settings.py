@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5i@hb-r25g*itt4p&#-)i-g@=x25#kxrerjr0^h#+iot78x@)a'
+SECRET_KEY = ''
 
 CKEDITOR_CONFIGS = {
     'default': {
@@ -36,7 +36,6 @@ CKEDITOR_CONFIGS = {
         'filebrowserWindowHeight': 725,
         'filebrowserWindowWidth': "100%",
         'toolbarCanCollapse': True,
-        # 'mathJaxLib': '//cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML',
         'tabSpaces': 4,
     }
 }
