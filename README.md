@@ -150,6 +150,8 @@ your_customize_name/
 
 3. Make sure the following packages have been added to requirements.txt and MySQL Workbench has been installed in your PC:
 
+```Python
 mysql-connector==2.2.9
 mysql-connector-python==8.0.31
 mysqlclient==2.1.1
+```
