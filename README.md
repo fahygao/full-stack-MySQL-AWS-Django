@@ -74,3 +74,82 @@ Django version 4.2, using settings 'mysite.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
+
+Note: if the server has been occupied, we can go to setting and change the following content: 
+
+```Python
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000", #example of new server
+    "http://127.0.0.1:8000",
+]
+```
+
+Then run the following: 
+
+```Python
+python manage.py runserver localhost:3000
+```
+
+5. Set up your database by running the following code: 
+
+
+```Python
+python manage.py migrate
+```
+
+Please following the [tutorial from Django](https://docs.djangoproject.com/en/4.2/intro/tutorial02/) to create your model and your superuser.
+
+After creating your model, run the following code: 
+
+```Python
+python manage.py makemigration
+```
+```Python
+python manage.py migrate
+```
+
+Now your project will be like: 
+
+Now in the directory, you should have the following structure: 
+
+```Python
+your_customize_name/
+    manage.py
+    your_customize_name/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+    db.sqlite3
+    manage.py
+```
+
+
+**Connect MySQL to AWS and implement to Django**
+
+1. Please follow the [tutorial](https://medium.com/@ryanzhou7/connecting-a-mysql-workbench-to-amazon-web-services-relational-database-service-36ae1f23d424) to make sure you have set up your AWS account with the AWS **Free Tier** as well as [AWS EC2](https://aws.amazon.com/ec2/). 
+
+2. Connect the Django to AWS by following [AWS official toturial](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.htmlc)
+
+After configuring Django application for Electic Beanstalk, your project folder will be having the following structure: 
+
+```Python
+your_customize_name/
+|-- .ebextensions
+|   |-- django.config
+|-- your_customize_name
+|   |-- __init__.py
+|   |-- settings.py
+|   |-- urls.py
+|   |-- wsgi.py
+|-- db.sqlite3
+|-- manage.py
+|-- requirements.txt
+```
+
+3. Make sure the following packages have been added to requirements.txt and MySQL Workbench has been installed in your PC:
+
+mysql-connector==2.2.9
+mysql-connector-python==8.0.31
+mysqlclient==2.1.1
