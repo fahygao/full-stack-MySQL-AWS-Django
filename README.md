@@ -1,5 +1,5 @@
 # Django-based-database
----
+
 This project is a direct tutorial for building a web application database using django rest framework and AWS from scratch and a simple handbook of how to maintain the usability on Windows. 
 
 Duration: 1-2 weeks to build and setup
@@ -16,12 +16,61 @@ Current difficulty: Extra cost from AWS RDs, Insufficienty protection for databa
 
 Updated on 06/01/2023
 
-## Setup
----
-First please follow the following link to download **Django 2.2**, since AWS now can only support this version.  
+## Install Django and Set up basic setting for Django. 
+
+Ref: [Django Official Website](https://docs.djangoproject.com/en/4.2/intro/tutorial01/)
+
+**To set up Django**
+
+1. First, please use the following code to download **Django 2.2**, since [AWS official website](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html) only documentated the deploying process with this version. 
 
 ```Python
 pip install Django==2.2
 ```
 
-[Django Official Website](https://docs.djangoproject.com/en/4.2/intro/install/)
+2. Make sure your python version support Django 2.2 and verify the Django version: 
+
+```Python
+python -m django --version
+```
+
+3. Change the directory to the right location where you like to store your code and run:
+
+```Python
+django-admin startproject [your_customize_name]
+```
+
+Now in the directory, you should have the following structure: 
+
+```Python
+your_customize_name/
+    manage.py
+    your_customize_name/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+```
+
+4. Verify the usability of the Django project using development server: 
+
+```Python
+python manage.py runserver
+```
+
+You’ll see the following output on the command line:
+
+```Python
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have unapplied migrations; your app may not work properly until they are applied.
+Run 'python manage.py migrate' to apply them.
+
+June 01, 2023 - 15:50:53
+Django version 4.2, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
