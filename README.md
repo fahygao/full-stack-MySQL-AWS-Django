@@ -155,3 +155,18 @@ mysql-connector==2.2.9
 mysql-connector-python==8.0.31
 mysqlclient==2.1.1
 ```
+
+4. Please chaneg the following line in setting.py to be: 
+
+```Python
+DATABASES = { 
+    'default': {
+        'ENGINE'  : 'django.db.backends.mysql', 
+        'NAME'    : os.getenv('DB_NAME'     , '<database_name>'),
+        'USER'    : os.getenv('DB_USERNAME' , '<database_user>'),
+        'PASSWORD': os.getenv('DB_PASS'     , '<database_password>'),
+        'HOST'    : os.getenv('DB_HOST'     , '<database_endpoint>'),
+        'PORT'    : os.getenv('DB_PORT'     , 3306),
+    }
+ }
+ ```
