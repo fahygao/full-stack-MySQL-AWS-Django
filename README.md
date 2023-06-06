@@ -23,7 +23,7 @@ Reason: Reduce the risk of losing data, improve the efficiency to query and stor
 
 Learn: How to build Django web application for database usage, how to build and test the pipeline for database, how to connect local Django to AWS and test the compatability. 
 
-Current difficulty: Extra cost from AWS RDs, Insufficienty protection for database, Limited front-end related knowledge.  
+Current difficulty: Extra cost from AWS RDs and insufficienty protection for database.
 
 Updated on 06/01/2023
 
