@@ -1,6 +1,6 @@
 # Issue related to Data Base:
 
-1. What caused the issue? 
+# What caused the issue? 
 
 The backend server (nginx) rejected to connect to the new environment (django-env4) and application (one68_db_env), then the new domain could access to the backend apis and etc.
 
@@ -22,13 +22,13 @@ global:
 ```
 However, I do not know how to get the exact line to show what the backend server is connecting to. Need to do more research and ask AWS might help. 
 
-2. What is the difference between different environment and applications? 
+# What is the difference between different environment and applications? 
 
-**Definitions:**
+###Definitions:
 ---
 In AWS EB, an environment is associated with an application. An environment represents a specific instance of your application, including the underlying resources and configurations. So, you can consider an environment as being nested within an application. When creating a domain in AWS EB, you first create an application that represents your software solution. Once the application is created, you then set up an environment within that application. The environment is where your application will be deployed and accessible through a domain.When you deploy your project to AWS EB, it automatically provisions the necessary resources to run your application, including instances. An instance in AWS EB is a virtual machine that hosts your application and acts as a container for the server environment provided by AWS. Once your project is deployed and running on the instance within the environment, you can access your application through the domain you created. The domain serves as the entry point to your application, allowing users to interact with it over the internet.
 
-**Differences between different applications**
+###Differences between different applications
 ---
 In AWS Elastic Beanstalk (EB), two different applications represent separate and independent software solutions or systems. Each application in AWS EB has its own set of resources, configurations, and deployments. Here are the key differences between two different applications in AWS EB:
 
