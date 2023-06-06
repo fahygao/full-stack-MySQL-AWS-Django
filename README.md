@@ -3,10 +3,7 @@
   - [1.1. Prerequisites](#11-prerequisites)
 - [2. Install Django and Set up basic setting for Django](#2-Install-Django-and-Set-up-basic-setting-for-Django)
   - [2.1. Set up Django](#21-Set-up-Django)
-  - [2.2. Install/Upgrade the EB CLI](#22-installupgrade-the-eb-cli)
-    - [MacOS/Linux](#macoslinux)
-    - [Windows](#windows)
-  - [2.3. After installation](#23-after-installation)
+  - [2.2. Connect MySQL to AWS and implement to Django](#22-Connect-MySQL-to-AWS-and-implement-to-Django)
 - [3. Usage](#3-usage)
   - [3.1 Advanced usage](#31-advanced-usage)
   - [3.2 Options](#32-options)
@@ -150,7 +147,7 @@ your_customize_name/
 ```
 
 
-**Connect MySQL to AWS and implement to Django**
+### 2.2. Connect MySQL to AWS and implement to Django
 
 1. Please follow the [tutorial](https://medium.com/@ryanzhou7/connecting-a-mysql-workbench-to-amazon-web-services-relational-database-service-36ae1f23d424) to make sure you have set up your AWS account with the AWS **Free Tier** as well as [AWS EC2](https://aws.amazon.com/ec2/). 
 
