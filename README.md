@@ -7,7 +7,7 @@
 - [3. Install AWS CLI and Set up EB Environment](#3-Install-AWS-CLI-and-Set-up-EB-Environment)
   - [3.1 Advanced usage](#31-advanced-usage)
   - [3.2 Clone this repository](#32-Clone-this-repository)
-  - [3.3  Install/Upgrade the EB CLI](#33- Install/Upgrade-the-EB-CLI)
+  - [3.3  Install or Upgrade the EB CLI](#33- Install-or-Upgrade-the-EB-CLI)
 - [4. License](#4-license)
 
 ## 1. Overview 
