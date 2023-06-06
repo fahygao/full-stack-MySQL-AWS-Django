@@ -1,6 +1,6 @@
 # Issues related to DataBase:
 
-# What caused the issue? 
+## What caused the issue: backend sever rejected to respond our Post/Get request? 
 
 The backend server (nginx) rejected to connect to the new environment (django-env4) and application (one68_db_env), then the new domain could access to the backend apis and etc.
 
@@ -22,7 +22,7 @@ global:
 ```
 However, I do not know how to get the exact line to show what the backend server is connecting to. Need to do more research and ask AWS might help. 
 
-# What is the difference between different environment and applications? 
+## What is the difference between different environment and applications? 
 
 ### Definitions:
 
