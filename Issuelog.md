@@ -1,5 +1,55 @@
-# Issues related to DataBase:
+# Issues Log:
+January.02.2023
+---
+## What caused the issue: deploy failed to the AWS EB? 
 
+Deploy failed because packages failed to load and download. 
+Error message: 
+``` Python
+Collecting mysqlclient==2.1.1
+  Downloading mysqlclient-2.1.1.tar.gz (88 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.1/88.1 kB 20.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'error'
+
+2023/01/03 22:12:42.348066 [INFO]   error: subprocess-exited-with-error
+  
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [16 lines of output]
+      /bin/sh: mysql_config: command not found
+      /bin/sh: mariadb_config: command not found
+      /bin/sh: mysql_config: command not found
+      Traceback (most recent call last):
+        File "<string>", line 36, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-dw_djq9i/mysqlclient_2c8300e5eee443f7bd3392e323820cce/setup.py", line 15, in <module>
+          metadata, options = get_config()
+        File "/tmp/pip-install-dw_djq9i/mysqlclient_2c8300e5eee443f7bd3392e323820cce/setup_posix.py", line 70, in get_config
+          libs = mysql_config("libs")
+        File "/tmp/pip-install-dw_djq9i/mysqlclient_2c8300e5eee443f7bd3392e323820cce/setup_posix.py", line 31, in mysql_config
+          raise OSError("{} not found".format(_mysql_config_path))
+      OSError: mysql_config not found
+      mysql_config --version
+      mariadb_config --version
+      mysql_config --libs
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+```
+
+Mysql python package cannot be downloaded was not successfully downloaded form  
+
+
+June.02.2023
+---
 ## What caused the issue: backend sever rejected to respond our Post/Get request? 
 
 The backend server (nginx) rejected to connect to the new environment (django-env4) and application (one68_db_env), then the new domain could access to the backend apis and etc.
