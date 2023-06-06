@@ -1,8 +1,8 @@
 # Django-based-database
 - [1. Overview](#1-overview)
   - [1.1. Prerequisites](#11-prerequisites)
-- [2. Quick start](#2-quick-start)
-  - [2.1. Clone this repository](#21-clone-this-repository)
+- [2. Install Django and Set up basic setting for Django](#2-Install-Django-and-Set-up-basic-setting-for-Django)
+  - [2.1. Set up Django](#21-Set-up-Django)
   - [2.2. Install/Upgrade the EB CLI](#22-installupgrade-the-eb-cli)
     - [MacOS/Linux](#macoslinux)
     - [Windows](#windows)
@@ -44,7 +44,7 @@ Applications and services: AWS EC2, AWS RDs, AWS S3, Django, Django Restframe wo
 
 Ref: [Django Official Website](https://docs.djangoproject.com/en/4.2/intro/tutorial01/)
 
-**To set up Django**
+### 2.1. Set up Django
 
 1. First, please use the following code to download **Django 2.2**, since [AWS official website](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html) only documentated the deploying process with this version. 
 
