@@ -201,6 +201,18 @@ You will need to have the following prerequisites installed before running the i
 * **virtualenv**
   * Follow the [virtualenv documentation](https://virtualenv.pypa.io/en/latest/installation.html) to install virtualenv.
 
+  PS: Reason to use virtual environment: 
+
+  1. Dependency Management: Django applications often have specific versions and dependencies for Python packages. Using a virtual environment allows you to manage and control these dependencies independently for each project. It ensures that the project uses the correct versions of packages and avoids conflicts with other projects or the system-wide Python installation.
+
+  2. Reproducible Environments: With a virtual environment, you can create an environment that closely matches your development environment. It helps ensure that the application behaves consistently across different environments, such as development, testing, and production. By specifying the exact versions of packages in the virtual environment, you can replicate the environment easily and avoid unexpected issues caused by version mismatches.
+
+  3. Isolation and Security: Virtual environments provide isolation by creating a separate environment for each project. This isolation prevents conflicts between packages and allows for better security. It ensures that any changes or installations made within the virtual environment do not affect the global Python installation or other projects running on the same server.
+
+  4. Portability: Virtual environments make the deployment process more portable. You can package the virtual environment along with the project code, making it easier to deploy the application on different servers or cloud platforms. It provides a consistent environment for the application to run, regardless of the underlying system configuration.
+
+  5. Easy Management: Virtual environments simplify the management of project dependencies. You can use tools like pip (Python package manager) to install, update, and remove packages within the virtual environment without affecting other projects or the system-wide Python installation. It allows for better control and organization of project-specific dependencies.
+
 ### 3.2. Clone this repository
 
 Use the following:
