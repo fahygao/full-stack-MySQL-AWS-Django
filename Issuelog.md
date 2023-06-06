@@ -50,7 +50,7 @@ Solution: I manually downloaded all the packages to the virtual environments fir
 
 June.02.2023
 ---
-## What caused the issue: backend sever rejected to respond our Post/Get request? 
+#### What caused the issue: backend sever rejected to respond our Post/Get request? 
 
 The backend server (nginx) rejected to connect to the new environment (django-env4) and application (one68_db_env), then the new domain could access to the backend apis and etc.
 
