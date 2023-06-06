@@ -247,7 +247,7 @@ To set up Elastic Beanstalk (EB) on Windows using cmd, you can follow these step
    ```
    eb init
    ```
-   This command will guide you through the process of configuring your EB environment, selecting a region, and setting up your AWS credentials.
+   This command will guide you through the process of configuring your EB environment, selecting a region, and setting up your AWS credentials. If you are not sure, please follow [this] (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)
 
 7. Create an EB environment: After initializing your project, you can create an EB environment by running the following command:
    ```
@@ -261,7 +261,7 @@ To set up Elastic Beanstalk (EB) on Windows using cmd, you can follow these step
    ```
    This command will package and upload your application code to the EB environment, where it will be deployed and made accessible.
 
-That's it! You have now set up Elastic Beanstalk on your Windows machine and deployed your Django application. You can further customize your EB environment and manage your deployments using the EB CLI or the AWS Management Console.
+
 
 ## 5. License 
 
