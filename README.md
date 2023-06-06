@@ -262,7 +262,6 @@ To set up Elastic Beanstalk (EB) on Windows using cmd, you can follow these step
    This command will package and upload your application code to the EB environment, where it will be deployed and made accessible.
 
 
-
 ## 5. License 
 
 This library is licensed under the MIT License.
