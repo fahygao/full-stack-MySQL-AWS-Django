@@ -1,4 +1,4 @@
-# Django-based-database
+# Django project with AWS Deloyment
 - [1. Overview](#1-overview)
   - [1.1. Prerequisites](#11-prerequisites)
 - [2. Install Django and Set up basic setting for Django](#2-Install-Django-and-Set-up-basic-setting-for-Django)
