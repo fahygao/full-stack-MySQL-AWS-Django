@@ -4,17 +4,10 @@
 - [2. Install Django and Set up basic setting for Django](#2-Install-Django-and-Set-up-basic-setting-for-Django)
   - [2.1. Set up Django](#21-Set-up-Django)
   - [2.2. Connect MySQL to AWS and implement to Django](#22-Connect-MySQL-to-AWS-and-implement-to-Django)
-- [3. Usage](#3-usage)
+- [3. Install AWS CLI and Set up EB Environment](#3-Install-AWS-CLI-and-Set-up-EB-Environment)
   - [3.1 Advanced usage](#31-advanced-usage)
   - [3.2 Options](#32-options)
-- [4. Troubleshooting](#4-troubleshooting)
-- [5. Frequently asked questions](#5-frequently-asked-questions)
-  - [5.1. For the **experienced Python developer**, what's the advantage of this mode of installation instead of regular `pip` inside a `virtualenv`?](#51-for-the-experienced-python-developer-whats-the-advantage-of-this-mode-of-installation-instead-of-regular-pip-inside-a-virtualenv)
-  - [5.2. On macOS (or Linux systems with `brew`), is this better than `brew install awsebcli`?](#52-on-macos-or-linux-systems-with-brew-is-this-better-than-brew-install-awsebcli)
-  - [5.3. I already have the EB CLI installed. Can I still execute `ebcli_installer.py`?](#53-i-already-have-the-eb-cli-installed-can-i-still-execute-ebcli_installerpy)
-  - [5.4. How does `ebcli_installer.py` work?](#54-how-does-ebcli_installerpy-work)
-  - [5.5. Are there dependency problems that this mode of installation doesn't solve?](#55-are-there-dependency-problems-that-this-mode-of-installation-doesnt-solve)
-- [6. License](#6-license)
+- [4. License](#4-license)
 
 ## 1. Overview 
 
