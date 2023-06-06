@@ -1,4 +1,4 @@
-# Issue related to Data Base:
+# Issues related to DataBase:
 
 # What caused the issue? 
 
