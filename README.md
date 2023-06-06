@@ -188,6 +188,7 @@ DATABASES = {
  ```
 
 ## 3. Install AWS CLI and Set up EB Environment
+ref: [AWS Official Setup](https://github.com/aws/aws-elastic-beanstalk-cli-setup)
 
 ### 3.1. Prerequisites
 
