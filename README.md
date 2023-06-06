@@ -247,7 +247,7 @@ To set up Elastic Beanstalk (EB) on Windows using cmd, you can follow these step
    ```
    eb init
    ```
-   This command will guide you through the process of configuring your EB environment, selecting a region, and setting up your AWS credentials. If you are not sure, please follow [this] (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)
+   This command will guide you through the process of configuring your EB environment, selecting a region, and setting up your AWS credentials. If you are not sure, please follow [this](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)
 
 7. Create an EB environment: After initializing your project, you can create an EB environment by running the following command:
    ```
