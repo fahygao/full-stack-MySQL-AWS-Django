@@ -6,7 +6,8 @@
   - [2.2. Connect MySQL to AWS and implement to Django](#22-Connect-MySQL-to-AWS-and-implement-to-Django)
 - [3. Install AWS CLI and Set up EB Environment](#3-Install-AWS-CLI-and-Set-up-EB-Environment)
   - [3.1 Advanced usage](#31-advanced-usage)
-  - [3.2 Options](#32-options)
+  - [3.2 Clone this repository](#32-Clone-this-repository)
+  - [3.3  Install/Upgrade the EB CLI](#33- Install/Upgrade-the-EB-CLI)
 - [4. License](#4-license)
 
 ## 1. Overview 
@@ -184,3 +185,45 @@ DATABASES = {
     }
  }
  ```
+
+## 3. Install AWS CLI and Set up EB Environment
+
+### 3.1. Prerequisites
+
+You will need to have the following prerequisites installed before running the install script.
+
+* **Git**
+  * If not already installed you can download git from the [Git downloads page](https://git-scm.com/downloads).
+* **Python**
+  * We recommend that you install Python using the [pyenv](https://github.com/pyenv/pyenv) Python version manager. Alternately, you can download Python from the [Python downloads page](https://www.python.org/downloads/).
+* **virtualenv**
+  * Follow the [virtualenv documentation](https://virtualenv.pypa.io/en/latest/installation.html) to install virtualenv.
+
+### 3.2. Clone this repository
+
+Use the following:
+
+```
+git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
+```
+
+### 3.3. Install/Upgrade the EB CLI
+
+#### Windows
+In **PowerShell** or in a **Command Prompt** window:
+
+```
+python .\aws-elastic-beanstalk-cli-setup\scripts\ebcli_installer.py
+```
+
+## 4. Usage
+
+The `ebcli_installer.py` Python script will install the [awsebcli](https://pypi.org/project/awsebcli/) package in a virtual environment to prevent potential conflicts with other Python packages.
+
+For most use cases you can execute the `ebcli_installer.py` script with no arguments.
+
+```
+python ./aws-elastic-beanstalk-cli-setup/scripts/ebcli_installer.py
+```
+## 5. License 
+
