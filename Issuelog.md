@@ -25,9 +25,11 @@ However, I do not know how to get the exact line to show what the backend server
 2. What is the difference between different environment and applications? 
 
 **Definitions:**
+---
 In AWS EB, an environment is associated with an application. An environment represents a specific instance of your application, including the underlying resources and configurations. So, you can consider an environment as being nested within an application. When creating a domain in AWS EB, you first create an application that represents your software solution. Once the application is created, you then set up an environment within that application. The environment is where your application will be deployed and accessible through a domain.When you deploy your project to AWS EB, it automatically provisions the necessary resources to run your application, including instances. An instance in AWS EB is a virtual machine that hosts your application and acts as a container for the server environment provided by AWS. Once your project is deployed and running on the instance within the environment, you can access your application through the domain you created. The domain serves as the entry point to your application, allowing users to interact with it over the internet.
 
 **Differences between different applications**
+---
 In AWS Elastic Beanstalk (EB), two different applications represent separate and independent software solutions or systems. Each application in AWS EB has its own set of resources, configurations, and deployments. Here are the key differences between two different applications in AWS EB:
 
 1. Isolation: Each application operates independently and is isolated from other applications. They have their own environments, resources, and configurations. This isolation ensures that changes or issues in one application do not affect the others.
