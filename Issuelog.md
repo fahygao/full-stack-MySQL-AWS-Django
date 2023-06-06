@@ -3,7 +3,7 @@ January.02.2023
 ---
 ## What caused the issue: deploy failed to the AWS EB? 
 
-Deploy failed because packages failed to load and download. 
+Deploy failed because packages failed to mysql load and download. 
 Error message: 
 ``` Python
 Collecting mysqlclient==2.1.1
@@ -45,7 +45,7 @@ note: This is an issue with the package mentioned above, not pip.
 hint: See above for details.
 ```
 
-Mysql python package cannot be downloaded was not successfully downloaded form  
+Solution: I manually downloaded all the packages to the virtual environments first ( ``` Python pip install -r requirements.txt```), then deployed again. 
 
 
 June.02.2023
