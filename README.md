@@ -207,7 +207,7 @@ Use the following:
 git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
 ```
 
-### 3.3. Install/Upgrade the EB CLI
+### 3.3. Install or Upgrade the EB CLI
 
 #### Windows
 In **PowerShell** or in a **Command Prompt** window:
