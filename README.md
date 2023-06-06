@@ -8,7 +8,8 @@
   - [3.1 Advanced usage](#31-advanced-usage)
   - [3.2 Clone this repository](#32-Clone-this-repository)
   - [3.3 Install or Upgrade the EB CLI](#33-Install-or-Upgrade-the-EB-CLI)
-- [4. License](#4-license)
+- [4. Alternative method to download EB](#4-Alternative-method-to-download-EB)
+- [5. License](#5-License)
 
 ## 1. Overview 
 
@@ -216,14 +217,52 @@ In **PowerShell** or in a **Command Prompt** window:
 python .\aws-elastic-beanstalk-cli-setup\scripts\ebcli_installer.py
 ```
 
-## 4. Usage
+## 4. Alternative method to download EB
 
-The `ebcli_installer.py` Python script will install the [awsebcli](https://pypi.org/project/awsebcli/) package in a virtual environment to prevent potential conflicts with other Python packages.
+To set up Elastic Beanstalk (EB) on Windows using cmd, you can follow these steps:
 
-For most use cases you can execute the `ebcli_installer.py` script with no arguments.
+1. Install Python: EB requires Python, so make sure you have Python installed on your Windows machine. You can download the latest version of Python from the official Python website (https://www.python.org/) and follow the installation instructions.
 
-```
-python ./aws-elastic-beanstalk-cli-setup/scripts/ebcli_installer.py
-```
+2. Install the AWS Command Line Interface (CLI): The AWS CLI allows you to interact with AWS services, including Elastic Beanstalk. You can download the AWS CLI installer for Windows from the official AWS Command Line Interface website (https://aws.amazon.com/cli/) and follow the installation instructions.
+
+3. Configure AWS CLI: Once the AWS CLI is installed, open a command prompt or PowerShell window and run the following command:
+   ```
+   aws configure
+   ```
+   This command will prompt you to enter your AWS Access Key ID, AWS Secret Access Key, default region name, and default output format. You can obtain the Access Key ID and Secret Access Key from the AWS Management Console.
+
+4. Install EB CLI: The EB CLI is a command-line interface specifically for Elastic Beanstalk. To install it, open a command prompt or PowerShell window and run the following command:
+   ```
+   pip install awsebcli
+   ```
+
+5. Verify the installation: After installing the EB CLI, you can verify the installation by running the following command:
+   ```
+   eb --version
+   ```
+   This should display the version of the EB CLI if it was installed correctly.
+
+6. Initialize your EB project: Navigate to the root directory of your Django project using the command prompt or PowerShell window. Then, run the following command to initialize your EB project:
+   ```
+   eb init
+   ```
+   This command will guide you through the process of configuring your EB environment, selecting a region, and setting up your AWS credentials.
+
+7. Create an EB environment: After initializing your project, you can create an EB environment by running the following command:
+   ```
+   eb create
+   ```
+   This will create a new environment based on the configuration settings you specified during the initialization.
+
+8. Deploy your application: To deploy your Django application to the EB environment, use the following command:
+   ```
+   eb deploy
+   ```
+   This command will package and upload your application code to the EB environment, where it will be deployed and made accessible.
+
+That's it! You have now set up Elastic Beanstalk on your Windows machine and deployed your Django application. You can further customize your EB environment and manage your deployments using the EB CLI or the AWS Management Console.
+
 ## 5. License 
+
+This library is licensed under the MIT License.
 
