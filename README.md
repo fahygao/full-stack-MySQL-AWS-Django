@@ -201,7 +201,7 @@ You will need to have the following prerequisites installed before running the i
 * **virtualenv**
   * Follow the [virtualenv documentation](https://virtualenv.pypa.io/en/latest/installation.html) to install virtualenv.
 
-  PS: Reason to use virtual environment: 
+  PS: Reason to use virtual environments: 
 
   1. Dependency Management: Django applications often have specific versions and dependencies for Python packages. Using a virtual environment allows you to manage and control these dependencies independently for each project. It ensures that the project uses the correct versions of packages and avoids conflicts with other projects or the system-wide Python installation.
 
