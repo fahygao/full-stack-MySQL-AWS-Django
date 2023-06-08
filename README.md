@@ -275,7 +275,7 @@ To set up Elastic Beanstalk (EB) on Windows using cmd, you can follow these step
 
 
 PS: for some reasons, I can only load css properly, when I use ``` Python STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"); however, ```STATIC_ROOT = "static"
+    os.path.join(BASE_DIR, "static"); however, ```STATIC_ROOT = "static"``` can only work after uploading to AWS.  
 ```
 )```
 
