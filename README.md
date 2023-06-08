@@ -274,6 +274,11 @@ To set up Elastic Beanstalk (EB) on Windows using cmd, you can follow these step
    This command will package and upload your application code to the EB environment, where it will be deployed and made accessible.
 
 
+PS: for some reasons, I can only load css properly, when I use ``` Python STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"); however, ```STATIC_ROOT = "static"
+```
+)```
+
 ## 5. License 
 
 This library is licensed under the MIT License.
