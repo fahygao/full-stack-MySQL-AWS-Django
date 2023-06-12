@@ -1,6 +1,6 @@
 # How to update dbase.
 
-## 1. General steps to make change and upload to AWS. 
+## 1. General steps to make change and upload to AWS
 If the change is related to backend, such as adding a new attribute or modifying existing attributes to current models: 
 1. Make change to 'models.py' 
 2. Save and run (in your folder's directory) 
@@ -104,6 +104,6 @@ Then I go to base_site.html, ```ctrl+F``` to find the class name and see if we h
 
 And change the attributes to what you would like to set, and ```ctrl + S```. 
 
-Finish deploying by following the steps in - [1. General steps to make change and upload to AWS.](#1-General-steps-to-make-change-and-upload-to-AWS.)
+Finish deploying by following the steps in - [1. General steps to make change and upload to AWS](#1-General-steps-to-make-change-and-upload-to-AWS)
 
 ### 3.2 Change the model class 
