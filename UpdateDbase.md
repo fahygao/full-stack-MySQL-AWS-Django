@@ -108,7 +108,7 @@ Then I go to base_site.html, ```ctrl+F``` to find the class name and see if we h
 
 ![image](https://github.com/fahygao/full-stack-dbase-project/assets/48902014/16629e15-043f-4801-9144-f526e74aa4e1)
 
-And change the attributes to what you would like to set, and ```ctrl + S```. 
+And change the attributes to what you would like to set, and ```ctrl+S```. 
 
 Finish deploying by following the steps in - [1.2 Only frontend](#12-Only-frontend)
 
