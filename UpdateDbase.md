@@ -71,12 +71,12 @@ Under **templates**: all the static web pages. I will add * to all the origin fi
 | 401.html              | Display when unauthorized (have not used) |
 | 404.html       | Display when files nto found (have not used)|
 | 500.html      | Htmls (all of them are not functioning now |
-| add_deal.html    | Add New Deal  |
-| base.html      | All the django backend dbase pages configuration|
+| add_deal.html*    | Add New Deal  |
+| base.html*       | All the django backend dbase pages configuration|
 | charts.html      | template for adding charts |
-| deal_detail.html     | Deal detail page for each deal|
-| feeds_update.html    | All Events page html|
-| form.html     | Adding Recent Events|
+| deal_detail.html*      | Deal detail page for each deal|
+| feeds_update.html*     | All Events page html|
+| form.html*      | Adding Recent Events|
 | index.html*       | Dashboard|
 | layout-sidenav-light.html    | template to change the theme of the website|
 | layout-static.html     |template to change theme of the website|
