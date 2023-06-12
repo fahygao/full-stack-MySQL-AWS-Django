@@ -29,8 +29,14 @@ Identify what changes you want to make, such as html, css, js or scss, please on
     eb deploy
     ```
 ### 2. File documentation.
-
-| First Header  | Second Header |
+Under **db4_one68**
+| File Name  | Functionality |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| __pycache___ |bytecode files (.pyc) for improved performance|
+|  __init__.py | Null  |
+| settings.py  | Central configurations and file path |
+| urls.py      | Urls path related to each pages |
+| views.py     | Setup display of each pages with htmls |
+| wsgi.py      | Web Server Gateway Interface|
+
+
