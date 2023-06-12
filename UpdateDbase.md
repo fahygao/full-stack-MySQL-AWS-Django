@@ -56,4 +56,35 @@ Under **deals**
 | urls.py       | Urls related to APIs|
 | views.py      | Display set up for deal details page|
 
-Under **media**
+Under **media**: all the media files store locally (this folder should be empty).
+
+Under **static**: all the css and js related to all pages (please do not make any change in this folder unless you understand basic css and js knowledge. Some key files are listed below:
+| File Name  | Functionality |
+| ------------- | ------------- |
+|  admin_color.css |    All the css attributes related to backend dbase page |
+|  admin/css/forms.css| All the backend form css attributes (change the textbox size and so on) |
+
+Under **templates**: all the static web pages. I will add * to all the origin files I created.
+| File Name  | Functionality |
+| ------------- | ------------- |
+| admin/base_site.html  | Django backend dbase site|
+| 401.html              | Display when unauthorized (have not used) |
+| 404.html       | Display when files nto found (have not used)|
+| 500.html      | Htmls (all of them are not functioning now |
+| add_deal.html    | Add New Deal  |
+| base.html      | All the django backend dbase pages configuration|
+| charts.html      | template for adding charts |
+| deal_detail.html     | Deal detail page for each deal|
+| feeds_update.html    | All Events page html|
+| form.html     | Adding Recent Events|
+| index.html*       | Dashboard|
+| layout-sidenav-light.html    | template to change the theme of the website|
+| layout-static.html     |template to change theme of the website|
+| login.html       | Login |
+| password.html    | Reset password (Current not functioning)|
+| recentchanges.html*     | Real time entries page html|
+| register.html       | Register a new user (Current not functioning)|
+| search.html*    | Search|
+| tables.html     | tables template html|
+| update_event.html*       | Form for recent event (Recent event update page)|
+
