@@ -10,8 +10,9 @@ If the change is related to backend, such as adding a new attribute or modifying
     then run:
     ```Python 
     python manage.py migrate```
+    
     then: 
-    ```
+    ```Python
     eb deploy
     ```
 
