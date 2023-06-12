@@ -109,4 +109,15 @@ And change the attributes to what you would like to set, and ```ctrl + S```.
 
 Finish deploying by following the steps in - [1. General steps to make change and upload to AWS](#1-General-steps-to-make-change-and-upload-to-AWS)
 
-### 3.2 Change the model class 
+### 3.2 Add attribute into the Deal Basics:
+1. Locate the deal basics class 'DealName' in ```deals/models.py```. 
+2. Add a new row before 'reviewed' with corresponding model attributes (CharField, RichTextfield or DateField). Then save the file ```ctrl+S```
+3. Go to forms.py, add the new attribute to the class 'DealForm' (remember to add in fields, labels, and widgets).  
+4. Go to admin, add the new attribute to the class 'DealAdmin'.
+5. Check if we need to add the attribute to ```serializers.py``` as well. Normally, we do not need to change this file. 
+6. Last, go to ```deal_detail.html``` and add the new attribute to the corresponding location where you want to see in the front end. Basic format: 
+```Python
+    {% if i.NEW_ATT_NAME %}
+         <div class="deal-basics-title">NEW_ATT_NAME:</div> {{i.NEW_ATT_NAME}}<br>
+    {% endif %}
+```
