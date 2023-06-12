@@ -10,14 +10,19 @@ If the change is related to backend, such as adding a new attribute or modifying
     then run:
     ```Python 
     python manage.py migrate```
-    
     then: 
     ```Python
-    eb deploy
-    ```
-
-Identify what changes you want to make.
-1. If the change is related to frontend, such as html, css, js or scss, please only modify corresponding html files in templates folder. 
-
-To make any change in dbase, please follow the steps below. 
+    eb deploy```
+If the change is related to frontend, 
+Identify what changes you want to make, such as html, css, js or scss, please only modify corresponding html files in templates folder. 
+1. Make change to 'XXXX.html' 
+2. Run test (in your folder's directory) 
+    ```Python 
+    python manage.py runserver
+    #or
+    python manage.py runserver localhost:3000
+    ``` 
+    then go to the local ip to view the change and if the changes are correct, run:
+    ```Python
+    eb deploy```
 
