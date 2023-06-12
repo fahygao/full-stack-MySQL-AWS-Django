@@ -110,7 +110,7 @@ Then I go to base_site.html, ```ctrl+F``` to find the class name and see if we h
 
 And change the attributes to what you would like to set, and ```ctrl + S```. 
 
-Finish deploying by following the steps in - [1.2 Only frontend](#1.2-Only-frontend)
+Finish deploying by following the steps in - [1.2 Only frontend](#12-Only-frontend)
 
 ### 3.2 Add attribute into the Deal Basics:
 1. Locate the deal basics class 'DealName' in ```deals/models.py```. 
@@ -124,4 +124,4 @@ Finish deploying by following the steps in - [1.2 Only frontend](#1.2-Only-front
          <div class="deal-basics-title">NEW_ATT_NAME:</div> {{i.NEW_ATT_NAME}}<br>
     {% endif %}
 ```
-7.  Finish deploying by following the steps in - [1.1  Backend and frontend](#1.1-Backend-and-frontend)
+7.  Finish deploying by following the steps in - [1.1  Backend and frontend](#11-Backend-and-frontend)
