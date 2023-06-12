@@ -25,6 +25,10 @@ Learn: How to build Django web application for database usage, how to build and 
 
 Current difficulty: Extra cost from AWS RDs and insufficienty protection for database.
 
+Current snowflake schema ER diagram map: 
+![image](https://github.com/fahygao/full-stack-dbase-project/assets/48902014/5679a918-c01e-4224-9307-333576a3365b)
+
+
 Updated on 06/01/2023
 
 ### 1.1. Prerequisites
