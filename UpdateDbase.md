@@ -87,4 +87,23 @@ Under **templates**: all the static web pages. I will add * to all the origin fi
 | search.html*    | Search|
 | tables.html     | tables template html|
 | update_event.html*       | Form for recent event (Recent event update page)|
+## 3. Most frequent changes & examples.
 
+### 3.1 Change the general css of textbox or color in backend: 
+1. Locate the class name using inspection on the web page.
+2. Go to file base_site.html and add the corresponding styles to the same class.
+
+Exmple: I want to make modification on all the input box width
+![image](https://github.com/fahygao/full-stack-dbase-project/assets/48902014/eaf14401-b9d7-4db9-a802-d06616ac002d)
+
+I locate the css class of this textbox: 
+![image](https://github.com/fahygao/full-stack-dbase-project/assets/48902014/d929d9f5-230f-489f-82e5-8000841cdc71)
+
+Then I go to base_site.html, ```ctrl+F``` to find the class name and see if we have it. If not, create a new class. 
+![image](https://github.com/fahygao/full-stack-dbase-project/assets/48902014/16629e15-043f-4801-9144-f526e74aa4e1)
+
+And change the attributes to what you would like to set, and ```ctrl + S```. 
+
+Finish deploying by following the steps in # 1
+
+### 3.2 Change the model class 
