@@ -13,7 +13,7 @@
 
 ## 1. Overview 
 
-This project is a direct tutorial for building a web application database using django rest framework and AWS from scratch and a simple handbook of how to maintain the usability on Windows. 
+I have created a full stack web application that combines database with front-end UI pages. This is a tutorial I wrote for anyone that wants to create a similar web application using django rest framework and AWS from scratch.
 
 Duration: 1-2 weeks to build and setup
 
