@@ -24,5 +24,6 @@ Identify what changes you want to make, such as html, css, js or scss, please on
     ``` 
     then go to the local ip to view the change and if the changes are correct, run:
     ```Python
-    eb deploy```
+    eb deploy
+    ```
 
