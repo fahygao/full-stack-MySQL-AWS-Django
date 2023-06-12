@@ -11,8 +11,9 @@ If the change is related to backend, such as adding a new attribute or modifying
     ```Python 
     python manage.py migrate```
     then: 
-    ```Python 
-    eb deploy```
+    ```Python
+    eb deploy
+    ```
 
 Identify what changes you want to make.
 1. If the change is related to frontend, such as html, css, js or scss, please only modify corresponding html files in templates folder. 
