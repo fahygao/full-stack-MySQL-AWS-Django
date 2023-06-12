@@ -1,6 +1,8 @@
 # How to update dbase.
 
 ## 1. General steps to make change and upload to AWS
+### 1.1 Backend and frontend
+
 If the change is related to backend, such as adding a new attribute or modifying existing attributes to current models: 
 1. Make change to 'models.py' 
 2. Save and run (in your folder's directory) 
@@ -15,8 +17,9 @@ If the change is related to backend, such as adding a new attribute or modifying
     ```Python
     eb deploy
     ```
-If the change is related to frontend, 
-Identify what changes you want to make, such as html, css, js or scss, please only modify corresponding html files in templates folder. 
+### 1.2 Only frontend
+
+If the change is related to frontend, identify what changes you want to make, such as html, css, js or scss, please only modify corresponding html files in templates folder. 
 1. Make change to 'XXXX.html' 
 2. Run test (in your folder's directory) 
     ```Python 
@@ -107,7 +110,7 @@ Then I go to base_site.html, ```ctrl+F``` to find the class name and see if we h
 
 And change the attributes to what you would like to set, and ```ctrl + S```. 
 
-Finish deploying by following the steps in - [1. General steps to make change and upload to AWS](#1-General-steps-to-make-change-and-upload-to-AWS)
+Finish deploying by following the steps in - [1.2 Only frontend](#1.2-Only-frontend)
 
 ### 3.2 Add attribute into the Deal Basics:
 1. Locate the deal basics class 'DealName' in ```deals/models.py```. 
@@ -121,3 +124,4 @@ Finish deploying by following the steps in - [1. General steps to make change an
          <div class="deal-basics-title">NEW_ATT_NAME:</div> {{i.NEW_ATT_NAME}}<br>
     {% endif %}
 ```
+7.  Finish deploying by following the steps in - [1.1  Backend and frontend](#1.1-Backend-and-frontend)
